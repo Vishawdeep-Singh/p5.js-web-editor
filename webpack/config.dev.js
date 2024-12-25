@@ -3,6 +3,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ReactRefreshPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin');
 
 if (process.env.NODE_ENV === 'development') {
   require('dotenv').config();
@@ -32,10 +33,13 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     modules: ['client', 'node_modules'],
     fallback: {
-      os: require.resolve('os-browserify/browser')
+      os: require.resolve('os-browserify/browser'),
+      zlib: require.resolve('browserify-zlib'),
+      net: require.resolve('node-libs-browser/mock/net')
     }
   },
   plugins: [
+    new NodePolyfillPlugin(),
     new ESLintPlugin({
       extensions: ['js', 'jsx']
     }),

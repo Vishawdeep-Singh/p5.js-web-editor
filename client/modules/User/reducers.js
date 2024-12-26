@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../constants';
+import ActionTypes from '../../constants';
 
 const user = (state = { authenticated: false }, action) => {
   switch (action.type) {

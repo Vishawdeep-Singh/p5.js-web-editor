@@ -4,7 +4,7 @@ import { isEqual } from 'lodash';
 import browserHistory from '../../../browserHistory';
 import apiClient from '../../../utils/apiClient';
 import getConfig from '../../../utils/getConfig';
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 import { showToast, setToastText } from './toast';
 import {
   setUnsavedChanges,

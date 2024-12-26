@@ -1,7 +1,7 @@
 import apiClient from '../../../utils/apiClient';
-import * as ActionTypes from '../../../constants';
 import { startLoader, stopLoader } from '../reducers/loading';
 import { assetsActions } from '../reducers/assets';
+import ActionTypes from '../../../constants';
 
 const { setAssets, deleteAsset } = assetsActions;
 

@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 import { clearConsole } from './console';
 import { dispatchMessage, MessageTypes } from '../../../utils/dispatcher';
 

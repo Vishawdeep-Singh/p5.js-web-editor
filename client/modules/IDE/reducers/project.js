@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 import { generateProjectName } from '../../../utils/generateRandomName';
 
 const initialState = () => {

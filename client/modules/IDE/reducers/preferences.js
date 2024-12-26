@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 
 export const initialState = {
   fontSize: 18,

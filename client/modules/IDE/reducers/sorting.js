@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 import { DIRECTION } from '../actions/sorting';
 
 const initialState = {

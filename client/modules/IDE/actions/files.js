@@ -1,7 +1,7 @@
 import objectID from 'bson-objectid';
 import blobUtil from 'blob-util';
 import apiClient from '../../../utils/apiClient';
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 import {
   setUnsavedChanges,
   closeNewFolderModal,

@@ -1,4 +1,4 @@
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 
 const sketches = (state = [], action) => {
   switch (action.type) {

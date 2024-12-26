@@ -1,5 +1,5 @@
 import objectID from 'bson-objectid';
-import * as ActionTypes from '../../../constants';
+import ActionTypes from '../../../constants';
 import {
   defaultSketch,
   defaultCSS,
